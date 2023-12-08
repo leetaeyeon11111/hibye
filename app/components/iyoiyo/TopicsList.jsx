@@ -3,8 +3,10 @@ import RemoveBtn from './RemoveBtn'
 import { HiPencilAlt } from 'react-icons/hi'
 
 const getTopics = async () => {
+  const apiUrl = process.env.API_URL
+
   try {
-    const res = await fetch(`${apiUrl}/api/topics/${id}`, {
+    const res = await fetch(`${apiUrl}/api/topics/`, {
       cache: 'no-store',
     })
     if (!res.ok) {
@@ -12,7 +14,7 @@ const getTopics = async () => {
     }
     return res.json()
   } catch (error) {
-    console.log('Error loading topics: ', error)
+    console.log(error)
   }
 }
 export default async function TopicsList() {

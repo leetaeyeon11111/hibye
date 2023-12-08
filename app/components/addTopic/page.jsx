@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Hero from '../hero/Hero'
-import Link from 'next/link'
 
 export default function AddTopic() {
   const [title, setTitle] = useState('')
@@ -14,7 +13,7 @@ export default function AddTopic() {
       alert('Title and description are required.')
     }
     try {
-      const res = await fetch(`/api/topics/${id}`, {
+      const res = await fetch(`/api/topics/`, {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
