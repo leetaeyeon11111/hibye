@@ -7,13 +7,15 @@ export default function AddTopic() {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const router = useRouter()
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     if (!title || !description) {
       alert('Title and description are required.')
     }
     try {
-      const res = await fetch(`/api/topics/`, {
+      const res = await fetch(`/api/topics`, {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',

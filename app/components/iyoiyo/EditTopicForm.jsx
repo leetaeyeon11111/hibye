@@ -5,9 +5,12 @@ import { useState } from 'react'
 export default function EditTopicForm({ id, title, description }) {
   const [newTitle, setNewTitle] = useState(title)
   const [newDescription, setNewDescription] = useState(description)
+
   const router = useRouter()
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     try {
       const res = await fetch(`/api/topics/${id}`, {
         method: 'PUT',
