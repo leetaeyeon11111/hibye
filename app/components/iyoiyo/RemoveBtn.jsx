@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { HiOutlineTrash } from 'react-icons/hi'
+
 export default function RemoveBtn({ id }) {
   const router = useRouter()
   const removeTopic = async () => {
