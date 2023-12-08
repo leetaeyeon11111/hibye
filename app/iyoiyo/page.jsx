@@ -41,6 +41,7 @@ const service = () => {
           </button>
         </Link>
       </div>
+      <TopicsList />
     </>
   )
 }
