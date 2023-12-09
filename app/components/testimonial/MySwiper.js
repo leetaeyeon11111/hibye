@@ -3,6 +3,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { Pagination, Autoplay } from 'swiper/modules'
 import Image from 'next/image'
+import Link from 'next/link'
 export default function MySwiper() {
   return (
     <>
@@ -32,7 +33,9 @@ export default function MySwiper() {
                 사이트 구성도를 제작하였으며 메인화면과 사이트 소개 관련과 최종
                 사이트 검토를 맡았습니다.”
               </p>
-              <p className="text-gray-500 font-bold">최수민</p>
+              <Link href="https://github.com/sumin8520/sumin8520">
+                <p className="text-gray-500 font-bold">최수민</p>
+              </Link>
               <p>정보보호학과 92015506</p>
             </div>
           </SwiperSlide>
@@ -49,7 +52,9 @@ export default function MySwiper() {
                 프론트엔드, 백엔드 동시에 작업했으며 지역 맞춤 음식추천 페이지와
                 검색기능등을 맡았습니다.”
               </p>
-              <p className="text-gray-500 font-bold">이태연</p>
+              <Link href="https://github.com/leetaeyeon11111">
+                <p className="text-gray-500 font-bold">이태연</p>
+              </Link>
               <p>정보보호학과 92015374</p>
             </div>
           </SwiperSlide>
