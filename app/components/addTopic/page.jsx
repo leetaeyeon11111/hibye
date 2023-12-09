@@ -13,6 +13,7 @@ export default function AddTopic() {
 
     if (!title || !description) {
       alert('Title and description are required.')
+      return
     }
     try {
       const res = await fetch(`/api/topics`, {
