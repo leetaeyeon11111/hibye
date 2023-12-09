@@ -27,7 +27,7 @@ const Header = () => {
                 className="hover:text-[#3369e7] ease-in-out duration-200"
                 href="/services"
               >
-                지역
+                지역별 추천
               </Link>
             </li>
             <li>
@@ -35,7 +35,7 @@ const Header = () => {
                 className="hover:text-[#3369e7] ease-in-out duration-200"
                 href="/courses"
               >
-                음식추천
+                맛집검색
               </Link>
             </li>
           </ul>

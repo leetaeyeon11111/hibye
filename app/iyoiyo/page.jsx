@@ -32,9 +32,11 @@ const service = () => {
       ))}
 
       <div className="flex items-center justify-center">
-        <button className="mr-2 mt-3 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
-          자세히 보기
-        </button>
+        <Link href="https://map.naver.com/p/entry/place/31083209?c=15.00,0,0,0,dh">
+          <button className="mr-2 mt-3 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+            자세히 보기
+          </button>
+        </Link>
         <Link href="/components/addTopic">
           <button className="ml-2 mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
             댓글 작성
